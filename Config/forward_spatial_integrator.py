@@ -1,5 +1,5 @@
+from Core.model_fun import model_fun
 import numpy as np
-from Core.model_fun import *
 
 
 def forward_spatial_integrator(z, con, soil_parameters, dt, dz, y_old, active_uptake, uptake_type):
