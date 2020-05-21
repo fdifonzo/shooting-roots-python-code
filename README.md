@@ -23,5 +23,5 @@ In particular, you could set:
 The folder Utils contains .py scripts necessary for the Gardner constitutive relation setting 
 and Kirchhoff transform used in the examples.
 
-The folder Core contains the function to integrate, and the class ShootingSol which provides 
+The folder Core contains the function to integrate (model_fun.py), and the class ShootingSol.py which provides 
 the numerical solution. This folder should be NOT modified by the user.
