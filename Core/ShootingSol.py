@@ -1,6 +1,6 @@
 from Config.guess_sol import *
 from Config.der_guess_sol import *
-from Config.runge_kutta import *
+from Config.forward_spatial_integrator import *
 from Utils.from_mu_to_theta import *
 import numpy as np
 
@@ -43,15 +43,15 @@ class ShootingSol:
             shoot2 = diff + 2
             ic1 = np.array([con_1, shoot1]).reshape(1, 2)
             ic2 = np.array([con_1, shoot2]).reshape(1, 2)
-            sol1 = runge_kutta(self.z_sol, ic1, soil_parameters, self.dt, self.dz, y_old, active_uptake, uptake_type)
-            sol2 = runge_kutta(self.z_sol, ic2, soil_parameters, self.dt, self.dz, y_old, active_uptake, uptake_type)
+            sol1 = forward_spatial_integrator(self.z_sol, ic1, soil_parameters, self.dt, self.dz, y_old, active_uptake, uptake_type)
+            sol2 = forward_spatial_integrator(self.z_sol, ic2, soil_parameters, self.dt, self.dz, y_old, active_uptake, uptake_type)
             sol1 = sol1[-1, 0] - con_2
             sol2 = sol2[-1, 0] - con_2
             sol3 = sol1
             while abs(np.real(sol3)) > self.absTol:
                 shoot3 = shoot2 - sol2 * (shoot2 - shoot1) / (sol2 - sol1)
                 ic3 = np.array([con_1, shoot3]).reshape(1, 2)
-                sol3 = runge_kutta(self.z_sol, ic3, soil_parameters, self.dt, self.dz, y_old, active_uptake,
+                sol3 = forward_spatial_integrator(self.z_sol, ic3, soil_parameters, self.dt, self.dz, y_old, active_uptake,
                                    uptake_type)
                 y = sol3
                 sol3 = sol3[-1, 0] - con_2
