@@ -40,5 +40,6 @@ shooting_solution = ShootingSol(dt, dz, array([0, T]), array([0, Z]), tol)
 shooting_solution.shooting_method(soil_parameters, active_uptake, uptake_type, bc_type)
 
 plt.contourf(shooting_solution.z_sol, shooting_solution.t_sol, shooting_solution.f_sol)
-
+plt.xlabel('z (cm)')
+plt.ylabel('t (h)')
 plt.show()
