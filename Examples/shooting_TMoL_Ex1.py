@@ -27,8 +27,8 @@ print(df)
 
 # INTEGRATION PARAMETER SETTING
 T = 3  # set by user
-Nt = 40  # set by user
-Nz = 110  # set by user
+Nt = 300  # set by user
+Nz = 10  # set by user
 tol = 1e-6  # set by user
 bc_type = 'Ex1'  # set by user: see Config.boundary_condition_setter.py
 
