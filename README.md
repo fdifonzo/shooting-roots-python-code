@@ -1,7 +1,7 @@
 # shooting-roots-python-code
 Python code for shooting method applied to Richards' equation with root water uptake models. 
 
-Please see F.V. Difonzo, C. Masciopinto, M. Vurro and M. Berardi, Shooting the numerical solution of moisture flow equation with root water uptake models, submitted to Journal of Hydrology, 2020.
+Please see F.V. Difonzo, C. Masciopinto, M. Vurro and M. Berardi, Shooting the numerical solution of linearized moisture flow equation with root water uptake: a Python tool, submitted to Journal of Hydrodynamics, 2020.
 
 Within this folder you find Python scripts developed in a Python 3.7 environment.
 
@@ -24,4 +24,4 @@ The folder Utils contains .py scripts necessary for the Gardner constitutive rel
 and Kirchhoff transform used in the examples.
 
 The folder Core contains the function to integrate (model_fun.py), and the class ShootingSol.py which provides 
-the numerical solution. This folder should be NOT modified by the user.
+the numerical solution. This folder should NOT be modified by the user.
