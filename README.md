@@ -1,7 +1,7 @@
 # shooting-roots-python-code
 Python code for shooting method applied to Richards' equation with root water uptake models. 
 
-Please see F.V. Difonzo, C. Masciopinto, M. Vurro and M. Berardi, Shooting the numerical solution of linearized moisture flow equation with root water uptake: a Python tool, submitted to Journal of Hydrodynamics, 2020.
+Please see F.V. Difonzo, C. Masciopinto, M. Vurro and M. Berardi, Shooting the numerical solution of linearized moisture flow equation with root water uptake: a Python tool.
 
 Within this folder you find Python scripts developed in a Python 3.7 environment.
 
