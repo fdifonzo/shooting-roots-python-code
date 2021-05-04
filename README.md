@@ -6,7 +6,7 @@ Please see F.V. Difonzo, C. Masciopinto, M. Vurro and M. Berardi, Shooting the n
 Within this folder you find Python scripts developed in a Python 3.7 environment.
 
 ***
-TO RUN an examples, go to the folder Examples and run the a .py script therein.
+TO RUN an examples, go to the folder Examples and run a .py script therein.
 If you want to create your own example, please follow the same structure.
 ***
 
